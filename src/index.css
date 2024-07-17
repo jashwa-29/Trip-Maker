@@ -7,12 +7,9 @@
 .nav-hero{
  background-image: url(./assets/hero-img.jpg);
  background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
- /* background-attachment: fixed; */
- /* width: 100%; */
- height: 100vh;
- background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
 
 .poppins{
@@ -46,14 +43,27 @@
   justify-content: center;
   align-items: center;
 } */
-@media screen and (max-width: 500px) {
-  .nav-hero{
-    background-image: none;
 
-    /* width: 100%; */
-    height: auto;
-  
-   }
+/* Example CSS for Navbar background transition */
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-dark {
+  background-color: white; /* Adjust opacity as needed */
+}
+
+/* Additional styles */
+.nav-bg-cl {
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
+}
+
+@media screen and (max-width: 500px) {
+  .nav-hero {
+    background-image: url(../src/assets/hero-bg-mobile.jpg); /* Mobile size image for smaller screens */
+    /* height: 70vh;  */
+    background-position: top; /* Further adjust background position */
+  }
    .slider{
    flex-direction: column;
   }
@@ -62,13 +72,11 @@
 @media only screen 
 and (min-device-width: 501px) 
 and (max-device-width: 1024px) {
-  .nav-hero{
-    background-image: none;
-
-    /* width: 100%; */
-    height: auto;
-  
-   }
+  .nav-hero {
+    background-image: url(./assets/hero-medium.jpg); /* Smaller size image for tablets */
+    height: 60vh; /* Adjust height for tablets */
+    background-position: top; /* Adjust background position */
+  }
 }
 
 
